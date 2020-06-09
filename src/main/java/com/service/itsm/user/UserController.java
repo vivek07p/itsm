@@ -2,6 +2,8 @@ package com.service.itsm.user;
 
 import io.jsonwebtoken.Jwts;
 import io.jsonwebtoken.SignatureAlgorithm;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.http.HttpHeaders;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -20,6 +22,7 @@ import java.util.stream.Collectors;
 @RestController
 @RequestMapping("api/user")
 public class UserController {
+    private static final Logger logger = LoggerFactory.getLogger(UserController.class);
 
     private BCryptPasswordEncoder passwordEncoder;
     private UserService userService;
@@ -39,7 +42,7 @@ public class UserController {
 
     @PostMapping("login")
     public ResponseEntity<String> authorize(@RequestBody User user) {
-
+        logger.debug("User signing in");
         UsernamePasswordAuthenticationToken authenticationToken =
                 new UsernamePasswordAuthenticationToken(user.getEmailId(), user.getPassword());
 
