@@ -17,6 +17,7 @@ import org.springframework.web.bind.annotation.*;
 
 import java.util.Date;
 import java.util.List;
+import java.util.UUID;
 import java.util.stream.Collectors;
 
 @RestController
@@ -37,6 +38,11 @@ public class UserController {
     @PostMapping("sign-up")
     public void signUp(@RequestBody User user) {
         user.setPassword(passwordEncoder.encode(user.getPassword()));
+        userService.save(user);
+    }
+
+    @PostMapping("update")
+    public void update(@RequestBody User user) {
         userService.save(user);
     }
 
@@ -74,9 +80,15 @@ public class UserController {
         return userService.getAllUsers();
     }
 
+
     @GetMapping("get/{emailId}")
     public User getUser(@PathVariable("emailId") String emailId){
         return userService.getByEmailId(emailId);
+    }
+
+    @GetMapping("get/uuid/{uuid}")
+    public User getUserByUUID(@PathVariable("uuid") String uuid){
+        return userService.getByUUID(uuid);
     }
 
 

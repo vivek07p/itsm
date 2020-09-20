@@ -7,9 +7,9 @@ import org.springframework.stereotype.Controller;
 
 import javax.transaction.Transactional;
 import java.util.List;
+import java.util.UUID;
 
 @Controller
-
 public class UserService implements UserDetailsService {
     private  UserRepository userRepository;
 
@@ -37,6 +37,10 @@ public class UserService implements UserDetailsService {
     }
 
     User getByEmailId(String emailId){
-        return userRepository.getOne(emailId);
+        return userRepository.findByEmailId(emailId);
+    }
+
+    public User getByUUID(String uuid){
+        return  userRepository.getOne(uuid);
     }
 }
