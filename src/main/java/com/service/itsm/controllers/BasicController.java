@@ -1,18 +1,15 @@
-package Controllers;
+package com.service.itsm.controllers;
 
 import com.service.itsm.basicService.BasicService;
 import com.service.itsm.pojo.*;
 import com.service.itsm.role.Role;
 import com.service.itsm.role.RoleMember;
-import org.springframework.stereotype.Controller;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.*;
+
 
 import java.util.List;
 
-@Controller
+@RestController
 @RequestMapping("api/basic")
 public class BasicController {
     private BasicService basicService;
@@ -30,7 +27,6 @@ public class BasicController {
     public void saveRole(@RequestBody Role role){
         basicService.saveRole(role);
     }
-
 
     @GetMapping("role-member-list")
     public List<RoleMember> getAllRoleMember(){
