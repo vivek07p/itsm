@@ -20,7 +20,7 @@ public class RoleMember {
 
     @ManyToOne(cascade = CascadeType.ALL)
     @JoinColumn(name="ALLOWED_ACCESS_CONTROL")
-    private AccessControl allowed_accessControl;
+    private AccessControl allowedAccessControl;
 
     public UUID getCoreId() {
         return coreId;
@@ -36,5 +36,13 @@ public class RoleMember {
 
     public void setSource(String source) {
         this.source = source;
+    }
+
+    public AccessControl getAllowedAccessControl() {
+        return allowedAccessControl;
+    }
+
+    public void setAllowedAccessControl(AccessControl allowedAccessControl) {
+        this.allowedAccessControl = allowedAccessControl;
     }
 }

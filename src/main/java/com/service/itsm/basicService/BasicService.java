@@ -9,6 +9,7 @@ import org.springframework.stereotype.Service;
 
 import javax.transaction.Transactional;
 import java.util.List;
+import java.util.UUID;
 
 @Service
 public class BasicService {
@@ -57,8 +58,18 @@ public class BasicService {
     }
 
     @Transactional
+    public Role getRole(UUID uuid){
+        return roleRepository.getOne(uuid);
+    }
+
+    @Transactional
     public void saveRoleMember(RoleMember roleMember){
         roleMemberRepository.save(roleMember);
+    }
+
+    @Transactional
+    public RoleMember getRoleMember(UUID uuid){
+        return roleMemberRepository.getOne(uuid);
     }
 
     @Transactional
@@ -67,13 +78,29 @@ public class BasicService {
     }
 
     @Transactional
+    public AccessControl getAccessControl(UUID uuid){
+        return accessControlRepository.getOne(uuid);
+    }
+
+    @Transactional
     public void saveAction(Action action){
          actionRepository.save(action);
     }
 
     @Transactional
+    public Action getAction(UUID uuid){
+        return actionRepository.getOne(uuid);
+    }
+
+
+    @Transactional
     public void saveApplicationField(ApplicationField applicationField){
          applicationFieldRepository.save(applicationField);
+    }
+
+    @Transactional
+    public ApplicationField getApplicationField(UUID uuid){
+        return applicationFieldRepository.getOne(uuid);
     }
 
     @Transactional
@@ -82,8 +109,18 @@ public class BasicService {
     }
 
     @Transactional
+    public ClientScript getClientScript(UUID uuid){
+        return clientScriptRepository.getOne(uuid);
+    }
+
+    @Transactional
     public void saveCoreField(CoreField coreField){
         coreFieldRepository.save(coreField);
+    }
+
+    @Transactional
+    public CoreField getCoreField(UUID uuid){
+        return coreFieldRepository.getOne(uuid);
     }
 
     @Transactional
@@ -106,6 +143,10 @@ public class BasicService {
         fieldRegistryRepository.save(fieldRegistry);
     }
 
+    @Transactional
+    public FieldRegistry getFieldRegistry(UUID uuid){
+        return fieldRegistryRepository.getOne(uuid);
+    }
 
     @Transactional
     public void saveFieldWidget(FieldWidget fieldWidget){
@@ -126,6 +167,10 @@ public class BasicService {
     public void saveTableRegistrie(TableRegistry tableRegistry){
         tableRegistryRepository.save(tableRegistry);
     }
+    @Transactional
+    public TableRegistry getTableRegistry(UUID uuid){
+        return tableRegistryRepository.getOne(uuid);
+    }
 
     @Transactional
     public void saveTrigger(Trigger trigger){
@@ -136,6 +181,59 @@ public class BasicService {
     public void saveValidation(Validation validation){
         validationRepository.save(validation);
     }
+
+
+    @Transactional
+    public DBField getDBField(UUID uuid){
+        return dbFieldRepository.getOne(uuid);
+    }
+
+    @Transactional
+    public  DisplayAction getDisplayAction(UUID uuid){
+        return displayActionRepository.getOne(uuid);
+    }
+
+    @Transactional
+    public DisplayRule getDisplayRule(UUID uuid){
+        return displayRuleRepository.getOne(uuid);
+    }
+
+    @Transactional
+    public FieldRegistry getFieldRegistries(UUID uuid){
+        return fieldRegistryRepository.getOne(uuid);
+    }
+
+
+    @Transactional
+    public FieldWidget getFieldWidget(UUID uuid){
+        return fieldWidgetRepository.getOne(uuid);
+    }
+
+    @Transactional
+    public FormDesign getFormDesign(UUID uuid){
+        return formDesignRepository.getOne(uuid);
+    }
+
+    @Transactional
+    public Lookup getLookup(UUID uuid){
+        return lookupRepository.getOne(uuid);
+    }
+
+    @Transactional
+    public TableRegistry getTableRegistrie(UUID uuid){
+        return tableRegistryRepository.getOne(uuid);
+    }
+
+    @Transactional
+    public Trigger getTrigger(UUID uuid){
+        return triggerRepository.getOne(uuid);
+    }
+
+    @Transactional
+    public Validation getValidation(UUID uuid){
+        return validationRepository.getOne(uuid);
+    }
+
 
     @Transactional
     public List<Role> getAllRoles(){

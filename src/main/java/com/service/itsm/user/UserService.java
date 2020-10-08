@@ -41,7 +41,7 @@ public class UserService implements UserDetailsService {
         return userRepository.findByEmailId(emailId);
     }
 
-    public User getByUUID(String uuid){
+    public User getByUUID(UUID uuid){
         return  userRepository.getOne(uuid);
     }
 }

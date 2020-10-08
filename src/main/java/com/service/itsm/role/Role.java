@@ -33,7 +33,7 @@ public class Role {
     @OneToMany(mappedBy="roleParent")
     private Set<Role> roleChildren = new HashSet<>();
 
-    @ManyToMany(mappedBy = "roles")
+    @ManyToMany(fetch = FetchType.LAZY, mappedBy = "roles")
     private Set<User> users = new HashSet<>();
 
     public UUID getCoreId() {

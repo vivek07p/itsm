@@ -87,7 +87,7 @@ public class UserController {
     }
 
     @GetMapping("get/uuid/{uuid}")
-    public User getUserByUUID(@PathVariable("uuid") String uuid){
+    public User getUserByUUID(@PathVariable("uuid") UUID uuid){
         return userService.getByUUID(uuid);
     }
 

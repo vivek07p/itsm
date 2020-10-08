@@ -1,0 +1,158 @@
+2020-10-09 00:09:17.910  INFO 28905 --- [Thread-6] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-10-09 00:09:17.923  INFO 28905 --- [Thread-6] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2020-10-09 00:09:17.932  INFO 28905 --- [Thread-6] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2020-10-09 00:09:17.938  INFO 28905 --- [Thread-6] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2020-10-09 00:09:25.849  INFO 29009 --- [main] com.service.itsm.ItsmApplication         : Starting ItsmApplication on VIVEKs-MacBook-Air.local with PID 29009 (/Users/vivekpandey/Documents/freelancing/itsm/target/classes started by vivekpandey in /Users/vivekpandey/Documents/freelancing/itsm)
+2020-10-09 00:09:25.873 DEBUG 29009 --- [main] com.service.itsm.ItsmApplication         : Running with Spring Boot v2.1.8.RELEASE, Spring v5.1.9.RELEASE
+2020-10-09 00:09:25.874  INFO 29009 --- [main] com.service.itsm.ItsmApplication         : No active profile set, falling back to default profiles: default
+2020-10-09 00:09:27.764  INFO 29009 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-10-09 00:09:27.767  INFO 29009 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2020-10-09 00:09:27.990  INFO 29009 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 213ms. Found 19 repository interfaces.
+2020-10-09 00:09:28.011  INFO 29009 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-10-09 00:09:28.013  INFO 29009 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2020-10-09 00:09:28.111  INFO 29009 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 90ms. Found 19 repository interfaces.
+2020-10-09 00:09:28.996  INFO 29009 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$c33a529c] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-10-09 00:09:29.088  INFO 29009 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.security.config.annotation.configuration.ObjectPostProcessorConfiguration' of type [org.springframework.security.config.annotation.configuration.ObjectPostProcessorConfiguration$$EnhancerBySpringCGLIB$$5be81ad6] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-10-09 00:09:29.099  INFO 29009 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'objectPostProcessor' of type [org.springframework.security.config.annotation.configuration.AutowireBeanFactoryObjectPostProcessor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-10-09 00:09:29.102  INFO 29009 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler@6ba30587' of type [org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-10-09 00:09:29.107  INFO 29009 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.security.config.annotation.method.configuration.GlobalMethodSecurityConfiguration' of type [org.springframework.security.config.annotation.method.configuration.GlobalMethodSecurityConfiguration$$EnhancerBySpringCGLIB$$80bcbd88] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-10-09 00:09:29.117  INFO 29009 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'methodSecurityMetadataSource' of type [org.springframework.security.access.method.DelegatingMethodSecurityMetadataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-10-09 00:09:29.746  INFO 29009 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2020-10-09 00:09:29.804  INFO 29009 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-10-09 00:09:29.804  INFO 29009 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.24]
+2020-10-09 00:09:30.166  INFO 29009 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-10-09 00:09:30.168 DEBUG 29009 --- [main] o.s.web.context.ContextLoader            : Published root WebApplicationContext as ServletContext attribute with name [org.springframework.web.context.WebApplicationContext.ROOT]
+2020-10-09 00:09:30.168  INFO 29009 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 4123 ms
+2020-10-09 00:09:30.528  INFO 29009 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2020-10-09 00:09:31.194  INFO 29009 --- [main] com.zaxxer.hikari.pool.PoolBase          : HikariPool-1 - Driver does not support get/set network timeout for connections. (This operation is not supported.)
+2020-10-09 00:09:31.279  INFO 29009 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2020-10-09 00:09:31.436  INFO 29009 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2020-10-09 00:09:31.616  INFO 29009 --- [main] org.hibernate.Version                    : HHH000412: Hibernate Core {5.3.11.Final}
+2020-10-09 00:09:31.626  INFO 29009 --- [main] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
+2020-10-09 00:09:32.028  INFO 29009 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+2020-10-09 00:09:32.493  INFO 29009 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.SQLServer2012Dialect
+2020-10-09 00:09:35.100  INFO 29009 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-10-09 00:09:37.013 DEBUG 29009 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/**/favicon.ico] in 'faviconHandlerMapping'
+2020-10-09 00:09:37.301  INFO 29009 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-10-09 00:09:37.318 DEBUG 29009 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2020-10-09 00:09:37.424  WARN 29009 --- [main] aWebConfiguration$JpaWebMvcConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-10-09 00:09:37.542 DEBUG 29009 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : 43 mappings in 'requestMappingHandlerMapping'
+2020-10-09 00:09:37.611 DEBUG 29009 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2020-10-09 00:09:37.641 DEBUG 29009 --- [main] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2020-10-09 00:09:38.295  INFO 29009 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@ebbbe20, org.springframework.security.web.context.SecurityContextPersistenceFilter@f5b4ca6, org.springframework.security.web.header.HeaderWriterFilter@22657db1, org.springframework.security.web.authentication.logout.LogoutFilter@45a05350, com.service.itsm.Configuration.JwtAuthorization@279e85eb, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@2566247d, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@6e111aeb, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@4cb59398, org.springframework.security.web.session.SessionManagementFilter@6fe91918, org.springframework.security.web.access.ExceptionTranslationFilter@7a1878d, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@73753326]
+2020-10-09 00:09:38.539  INFO 29009 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2020-10-09 00:09:38.545  INFO 29009 --- [main] com.service.itsm.ItsmApplication         : Started ItsmApplication in 14.026 seconds (JVM running for 15.294)
+2020-10-09 00:09:55.627  INFO 29009 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-10-09 00:09:55.629  INFO 29009 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-10-09 00:09:55.630 DEBUG 29009 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected StandardServletMultipartResolver
+2020-10-09 00:09:55.655 DEBUG 29009 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2020-10-09 00:09:55.656  INFO 29009 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 27 ms
+2020-10-09 00:09:56.343 DEBUG 29009 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : GET "/api/basic/role/7de85957-4b71-4240-9f82-e0abd3fa22aa", parameters={}
+2020-10-09 00:09:56.365 DEBUG 29009 --- [http-nio-8080-exec-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to public com.service.itsm.role.Role com.service.itsm.controllers.BasicController.getAllRoles(java.util.UUID)
+2020-10-09 00:10:00.678 DEBUG 29009 --- [http-nio-8080-exec-1] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2020-10-09 00:10:00.735 DEBUG 29009 --- [http-nio-8080-exec-1] m.m.a.RequestResponseBodyMethodProcessor : Writing [com.service.itsm.role.Role@4690cbe7]
+2020-10-09 00:10:00.783 DEBUG 29009 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2020-10-09 00:12:00.640  INFO 29009 --- [Thread-6] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-10-09 00:12:00.650  INFO 29009 --- [Thread-6] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2020-10-09 00:12:00.660  INFO 29009 --- [Thread-6] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2020-10-09 00:12:00.667  INFO 29009 --- [Thread-6] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2020-10-09 00:12:08.809  INFO 29026 --- [main] com.service.itsm.ItsmApplication         : Starting ItsmApplication on VIVEKs-MacBook-Air.local with PID 29026 (/Users/vivekpandey/Documents/freelancing/itsm/target/classes started by vivekpandey in /Users/vivekpandey/Documents/freelancing/itsm)
+2020-10-09 00:12:08.821 DEBUG 29026 --- [main] com.service.itsm.ItsmApplication         : Running with Spring Boot v2.1.8.RELEASE, Spring v5.1.9.RELEASE
+2020-10-09 00:12:08.822  INFO 29026 --- [main] com.service.itsm.ItsmApplication         : No active profile set, falling back to default profiles: default
+2020-10-09 00:12:10.748  INFO 29026 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-10-09 00:12:10.751  INFO 29026 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2020-10-09 00:12:11.002  INFO 29026 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 241ms. Found 19 repository interfaces.
+2020-10-09 00:12:11.021  INFO 29026 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-10-09 00:12:11.024  INFO 29026 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2020-10-09 00:12:11.102  INFO 29026 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 70ms. Found 19 repository interfaces.
+2020-10-09 00:12:11.987  INFO 29026 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$cfb02961] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-10-09 00:12:12.091  INFO 29026 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.security.config.annotation.configuration.ObjectPostProcessorConfiguration' of type [org.springframework.security.config.annotation.configuration.ObjectPostProcessorConfiguration$$EnhancerBySpringCGLIB$$685df19b] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-10-09 00:12:12.101  INFO 29026 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'objectPostProcessor' of type [org.springframework.security.config.annotation.configuration.AutowireBeanFactoryObjectPostProcessor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-10-09 00:12:12.104  INFO 29026 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler@75ae4a1f' of type [org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-10-09 00:12:12.109  INFO 29026 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.security.config.annotation.method.configuration.GlobalMethodSecurityConfiguration' of type [org.springframework.security.config.annotation.method.configuration.GlobalMethodSecurityConfiguration$$EnhancerBySpringCGLIB$$8d32944d] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-10-09 00:12:12.121  INFO 29026 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'methodSecurityMetadataSource' of type [org.springframework.security.access.method.DelegatingMethodSecurityMetadataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-10-09 00:12:12.828  INFO 29026 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2020-10-09 00:12:12.882  INFO 29026 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-10-09 00:12:12.883  INFO 29026 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.24]
+2020-10-09 00:12:13.244  INFO 29026 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-10-09 00:12:13.244 DEBUG 29026 --- [main] o.s.web.context.ContextLoader            : Published root WebApplicationContext as ServletContext attribute with name [org.springframework.web.context.WebApplicationContext.ROOT]
+2020-10-09 00:12:13.244  INFO 29026 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 4203 ms
+2020-10-09 00:12:13.596  INFO 29026 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2020-10-09 00:12:14.281  INFO 29026 --- [main] com.zaxxer.hikari.pool.PoolBase          : HikariPool-1 - Driver does not support get/set network timeout for connections. (This operation is not supported.)
+2020-10-09 00:12:14.363  INFO 29026 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2020-10-09 00:12:14.491  INFO 29026 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2020-10-09 00:12:14.706  INFO 29026 --- [main] org.hibernate.Version                    : HHH000412: Hibernate Core {5.3.11.Final}
+2020-10-09 00:12:14.715  INFO 29026 --- [main] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
+2020-10-09 00:12:15.117  INFO 29026 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+2020-10-09 00:12:15.637  INFO 29026 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.SQLServer2012Dialect
+2020-10-09 00:12:18.430  INFO 29026 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-10-09 00:12:20.253 DEBUG 29026 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/**/favicon.ico] in 'faviconHandlerMapping'
+2020-10-09 00:12:20.544  INFO 29026 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-10-09 00:12:20.560 DEBUG 29026 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2020-10-09 00:12:20.655  WARN 29026 --- [main] aWebConfiguration$JpaWebMvcConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-10-09 00:12:20.775 DEBUG 29026 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : 43 mappings in 'requestMappingHandlerMapping'
+2020-10-09 00:12:20.838 DEBUG 29026 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2020-10-09 00:12:20.858 DEBUG 29026 --- [main] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2020-10-09 00:12:21.517  INFO 29026 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@3a678e40, org.springframework.security.web.context.SecurityContextPersistenceFilter@e356940, org.springframework.security.web.header.HeaderWriterFilter@3b38f032, org.springframework.security.web.authentication.logout.LogoutFilter@5e1bfe66, com.service.itsm.Configuration.JwtAuthorization@222dc36c, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@3c577368, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@2821da0a, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@3445ddf2, org.springframework.security.web.session.SessionManagementFilter@6ebf9c2d, org.springframework.security.web.access.ExceptionTranslationFilter@6d70e68b, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@192b76a4]
+2020-10-09 00:12:21.697  INFO 29026 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2020-10-09 00:12:21.703  INFO 29026 --- [main] com.service.itsm.ItsmApplication         : Started ItsmApplication in 14.204 seconds (JVM running for 15.383)
+2020-10-09 00:12:54.835  INFO 29026 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-10-09 00:12:54.836  INFO 29026 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-10-09 00:12:54.837 DEBUG 29026 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected StandardServletMultipartResolver
+2020-10-09 00:12:54.884 DEBUG 29026 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2020-10-09 00:12:54.884  INFO 29026 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 47 ms
+2020-10-09 00:12:55.600 DEBUG 29026 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : GET "/api/basic/role/7de85957-4b71-4240-9f82-e0abd3fa22aa", parameters={}
+2020-10-09 00:12:55.632 DEBUG 29026 --- [http-nio-8080-exec-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to public com.service.itsm.role.Role com.service.itsm.controllers.BasicController.getAllRoles(java.util.UUID)
+2020-10-09 00:13:00.492 DEBUG 29026 --- [http-nio-8080-exec-1] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2020-10-09 00:13:00.584 DEBUG 29026 --- [http-nio-8080-exec-1] m.m.a.RequestResponseBodyMethodProcessor : Writing [com.service.itsm.role.Role@5b64ce66]
+2020-10-09 00:13:00.656 DEBUG 29026 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2020-10-09 00:42:08.387  INFO 29026 --- [Thread-6] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-10-09 00:42:08.398  INFO 29026 --- [Thread-6] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2020-10-09 00:42:08.405  INFO 29026 --- [Thread-6] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2020-10-09 00:42:08.410  INFO 29026 --- [Thread-6] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2020-10-09 00:42:18.230  INFO 29132 --- [main] com.service.itsm.ItsmApplication         : Starting ItsmApplication on VIVEKs-MacBook-Air.local with PID 29132 (/Users/vivekpandey/Documents/freelancing/itsm/target/classes started by vivekpandey in /Users/vivekpandey/Documents/freelancing/itsm)
+2020-10-09 00:42:18.237 DEBUG 29132 --- [main] com.service.itsm.ItsmApplication         : Running with Spring Boot v2.1.8.RELEASE, Spring v5.1.9.RELEASE
+2020-10-09 00:42:18.238  INFO 29132 --- [main] com.service.itsm.ItsmApplication         : No active profile set, falling back to default profiles: default
+2020-10-09 00:42:20.091  INFO 29132 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-10-09 00:42:20.093  INFO 29132 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2020-10-09 00:42:20.368  INFO 29132 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 263ms. Found 19 repository interfaces.
+2020-10-09 00:42:20.386  INFO 29132 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-10-09 00:42:20.388  INFO 29132 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2020-10-09 00:42:20.468  INFO 29132 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 72ms. Found 19 repository interfaces.
+2020-10-09 00:42:21.381  INFO 29132 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$345504ac] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-10-09 00:42:21.457  INFO 29132 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.security.config.annotation.configuration.ObjectPostProcessorConfiguration' of type [org.springframework.security.config.annotation.configuration.ObjectPostProcessorConfiguration$$EnhancerBySpringCGLIB$$cd02cce6] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-10-09 00:42:21.471  INFO 29132 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'objectPostProcessor' of type [org.springframework.security.config.annotation.configuration.AutowireBeanFactoryObjectPostProcessor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-10-09 00:42:21.474  INFO 29132 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler@44e93c1f' of type [org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-10-09 00:42:21.476  INFO 29132 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.security.config.annotation.method.configuration.GlobalMethodSecurityConfiguration' of type [org.springframework.security.config.annotation.method.configuration.GlobalMethodSecurityConfiguration$$EnhancerBySpringCGLIB$$f1d76f98] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-10-09 00:42:21.488  INFO 29132 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'methodSecurityMetadataSource' of type [org.springframework.security.access.method.DelegatingMethodSecurityMetadataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-10-09 00:42:22.115  INFO 29132 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2020-10-09 00:42:22.173  INFO 29132 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-10-09 00:42:22.173  INFO 29132 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.24]
+2020-10-09 00:42:22.550  INFO 29132 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-10-09 00:42:22.551 DEBUG 29132 --- [main] o.s.web.context.ContextLoader            : Published root WebApplicationContext as ServletContext attribute with name [org.springframework.web.context.WebApplicationContext.ROOT]
+2020-10-09 00:42:22.551  INFO 29132 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 4173 ms
+2020-10-09 00:42:22.947  INFO 29132 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2020-10-09 00:42:23.579  INFO 29132 --- [main] com.zaxxer.hikari.pool.PoolBase          : HikariPool-1 - Driver does not support get/set network timeout for connections. (This operation is not supported.)
+2020-10-09 00:42:23.661  INFO 29132 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2020-10-09 00:42:23.820  INFO 29132 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2020-10-09 00:42:23.986  INFO 29132 --- [main] org.hibernate.Version                    : HHH000412: Hibernate Core {5.3.11.Final}
+2020-10-09 00:42:23.990  INFO 29132 --- [main] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
+2020-10-09 00:42:24.395  INFO 29132 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+2020-10-09 00:42:24.819  INFO 29132 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.SQLServer2012Dialect
+2020-10-09 00:42:27.494  INFO 29132 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-10-09 00:42:29.452 DEBUG 29132 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/**/favicon.ico] in 'faviconHandlerMapping'
+2020-10-09 00:42:29.728  INFO 29132 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-10-09 00:42:29.745 DEBUG 29132 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2020-10-09 00:42:29.853  WARN 29132 --- [main] aWebConfiguration$JpaWebMvcConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-10-09 00:42:29.989 DEBUG 29132 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : 59 mappings in 'requestMappingHandlerMapping'
+2020-10-09 00:42:30.052 DEBUG 29132 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2020-10-09 00:42:30.071 DEBUG 29132 --- [main] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2020-10-09 00:42:30.768  INFO 29132 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@6484364f, org.springframework.security.web.context.SecurityContextPersistenceFilter@53c21c05, org.springframework.security.web.header.HeaderWriterFilter@451f3f66, org.springframework.security.web.authentication.logout.LogoutFilter@11d0bff5, com.service.itsm.Configuration.JwtAuthorization@2ddb6c71, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@38326fd5, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@52a9db63, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@29f114e0, org.springframework.security.web.session.SessionManagementFilter@2e60d4f4, org.springframework.security.web.access.ExceptionTranslationFilter@35c9f527, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@5776a9f8]
+2020-10-09 00:42:30.977  INFO 29132 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2020-10-09 00:42:30.984  INFO 29132 --- [main] com.service.itsm.ItsmApplication         : Started ItsmApplication in 14.201 seconds (JVM running for 15.362)
