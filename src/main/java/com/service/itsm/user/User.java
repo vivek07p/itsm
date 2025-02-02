@@ -1,7 +1,5 @@
 package com.service.itsm.user;
 
-import com.service.itsm.group.Group;
-import com.service.itsm.role.Role;
 import org.hibernate.annotations.GenericGenerator;
 import org.hibernate.annotations.Type;
 
@@ -47,17 +45,17 @@ public class User {
     @Column(name = "LOCATION")
     private String location;
 
-    @ManyToMany(cascade = CascadeType.ALL)
-    @JoinTable(name = "GROUP_MEMBER",
-            joinColumns = { @JoinColumn(name = "user_id") },
-            inverseJoinColumns = { @JoinColumn(name = "group_id") })
-    private Set<Group> groups = new HashSet<>();
-
-    @ManyToMany(cascade = CascadeType.ALL)
-    @JoinTable(name = "ROLE_MEMBER",
-            joinColumns = { @JoinColumn(name = "USER_ID") },
-            inverseJoinColumns = { @JoinColumn(name = "ROLE_ID") })
-    private Set<Role> roles = new HashSet<>();
+//    @ManyToMany(cascade = CascadeType.ALL)
+//    @JoinTable(name = "GROUP_MEMBER",
+//            joinColumns = { @JoinColumn(name = "user_id") },
+//            inverseJoinColumns = { @JoinColumn(name = "group_id") })
+//    private Set<Group> groups = new HashSet<>();
+//
+//    @ManyToMany(cascade = CascadeType.ALL)
+//    @JoinTable(name = "ROLE_MEMBER",
+//            joinColumns = { @JoinColumn(name = "USER_ID") },
+//            inverseJoinColumns = { @JoinColumn(name = "ROLE_ID") })
+//    private Set<Role> roles = new HashSet<>();
 
     public UUID getCoreId() {
         return coreId;
@@ -139,19 +137,19 @@ public class User {
         this.location = location;
     }
 
-    public Set<Group> getGroups() {
-        return groups;
-    }
-
-    public void setGroups(Set<Group> groups) {
-        this.groups = groups;
-    }
-
-    public Set<Role> getRoles() {
-        return roles;
-    }
-
-    public void setRoles(Set<Role> roles) {
-        this.roles = roles;
-    }
+//    public Set<Group> getGroups() {
+//        return groups;
+//    }
+//
+//    public void setGroups(Set<Group> groups) {
+//        this.groups = groups;
+//    }
+//
+//    public Set<Role> getRoles() {
+//        return roles;
+//    }
+//
+//    public void setRoles(Set<Role> roles) {
+//        this.roles = roles;
+//    }
 }
