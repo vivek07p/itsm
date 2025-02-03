@@ -1,6 +1,7 @@
 package com.service.itsm.Configuration;
 
 import io.jsonwebtoken.Jwts;
+import io.jsonwebtoken.SignatureAlgorithm;
 import org.springframework.security.authentication.AuthenticationManager;
 import org.springframework.security.authentication.UsernamePasswordAuthenticationToken;
 import org.springframework.security.core.context.SecurityContextHolder;
@@ -46,6 +47,11 @@ public class JwtAuthorization extends BasicAuthenticationFilter {
         }
         return null;
     }
-
+//return Jwts.builder()
+//        .setSubject(authentication.getName())
+//            .claim("Authorization", authorities)
+//                .signWith(SignatureAlgorithm.HS512, "SECRET")
+//                .setExpiration(validity)
+//                .compact();
 
 }

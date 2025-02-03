@@ -1,68 +1,66 @@
 package com.service.itsm.user;
 
-import org.hibernate.annotations.GenericGenerator;
 import org.hibernate.annotations.Type;
 
 import javax.persistence.*;
-import java.util.HashSet;
-import java.util.Set;
 import java.util.UUID;
 
 @Entity
 @Table(name="USERS")
 public class User {
 
+//    @Id
+//    @GeneratedValue(strategy = GenerationType.AUTO)
+//    @Type(type="uuid-char")
+//    @Column(name="CORE_ID", columnDefinition = "VARCHAR(255)", insertable = false, updatable = false)
+//    private UUID coreId;
     @Id
-    @GeneratedValue(strategy = GenerationType.AUTO)
-    @Type(type="uuid-char")
-    @Column(name="CORE_ID", columnDefinition = "VARCHAR(255)", insertable = false, updatable = false, nullable = false)
-    private UUID coreId;
-
-    @Column(name="EMAIL_ID",nullable = false, unique = true)
+    @Column(name = "email_id", unique = true)
     private String emailId;
 
-    @Column(name="FIRST_NAME")
-    private String firstName;
+    @Column(name = "username", unique = true)
+    private String username;
 
-    @Column(name="LAST_NAME")
-    private String lastName;
+    @Column(name = "fullname")
+    private String fullName;
 
-    @Column(name="PASSWORD")
+
+    @Column(name = "password")
     private String password;
 
-    @Column(name="PHONE",length = 20)
-    private String phone;
+    @Enumerated(EnumType.STRING)
+    @Column(name = "gender")
+    private Gender gender;
 
-    @Column(name = "DEPARTMENT", length = 50)
-    private String department;
+    @Column(name = "profile_pic")
+    private String profilePic;
 
-    @Column(name="TIME_ZONE", length = 10)
-    private String timeZone;
+    @Column(name = "date_of_birth")
+    private String dateOfBirth;
 
-    @Column(name="SOURCE")
-    private String source;
+    @Enumerated(EnumType.STRING)
+    @Column(name = "role")
+    private Role role;
 
-    @Column(name = "LOCATION")
-    private String location;
+    @Column(name = "created_at")
+    private String createdAt;
 
-//    @ManyToMany(cascade = CascadeType.ALL)
-//    @JoinTable(name = "GROUP_MEMBER",
-//            joinColumns = { @JoinColumn(name = "user_id") },
-//            inverseJoinColumns = { @JoinColumn(name = "group_id") })
-//    private Set<Group> groups = new HashSet<>();
-//
-//    @ManyToMany(cascade = CascadeType.ALL)
-//    @JoinTable(name = "ROLE_MEMBER",
-//            joinColumns = { @JoinColumn(name = "USER_ID") },
-//            inverseJoinColumns = { @JoinColumn(name = "ROLE_ID") })
-//    private Set<Role> roles = new HashSet<>();
+    // Getters and Setters for all fields
 
-    public UUID getCoreId() {
-        return coreId;
+    public String getUsername() {
+        return username;
     }
 
-    public void setCoreId(UUID coreId) {
-        this.coreId = coreId;
+    public void setUsername(String username) {
+        this.username = username;
+    }
+
+    public String getFullName() {
+        return fullName;
+    }
+
+    public void setFullName(String fullName) {
+        this.fullName = fullName;
     }
 
     public String getEmailId() {
@@ -73,22 +71,6 @@ public class User {
         this.emailId = emailId;
     }
 
-    public String getFirstName() {
-        return firstName;
-    }
-
-    public void setFirstName(String firstName) {
-        this.firstName = firstName;
-    }
-
-    public String getLastName() {
-        return lastName;
-    }
-
-    public void setLastName(String lastName) {
-        this.lastName = lastName;
-    }
-
     public String getPassword() {
         return password;
     }
@@ -97,59 +79,43 @@ public class User {
         this.password = password;
     }
 
-    public String getPhone() {
-        return phone;
+    public Gender getGender() {
+        return gender;
     }
 
-    public void setPhone(String phone) {
-        this.phone = phone;
+    public void setGender(Gender gender) {
+        this.gender = gender;
     }
 
-    public String getDepartment() {
-        return department;
+    public String getProfilePic() {
+        return profilePic;
     }
 
-    public void setDepartment(String department) {
-        this.department = department;
+    public void setProfilePic(String profilePic) {
+        this.profilePic = profilePic;
     }
 
-    public String getTimeZone() {
-        return timeZone;
+    public String getDateOfBirth() {
+        return dateOfBirth;
     }
 
-    public void setTimeZone(String timeZone) {
-        this.timeZone = timeZone;
+    public void setDateOfBirth(String dateOfBirth) {
+        this.dateOfBirth = dateOfBirth;
     }
 
-    public String getSource() {
-        return source;
+    public Role getRole() {
+        return role;
     }
 
-    public void setSource(String source) {
-        this.source = source;
+    public void setRole(Role role) {
+        this.role = role;
     }
 
-    public String getLocation() {
-        return location;
+    public String getCreatedAt() {
+        return createdAt;
     }
 
-    public void setLocation(String location) {
-        this.location = location;
+    public void setCreatedAt(String createdAt) {
+        this.createdAt = createdAt;
     }
-
-//    public Set<Group> getGroups() {
-//        return groups;
-//    }
-//
-//    public void setGroups(Set<Group> groups) {
-//        this.groups = groups;
-//    }
-//
-//    public Set<Role> getRoles() {
-//        return roles;
-//    }
-//
-//    public void setRoles(Set<Role> roles) {
-//        this.roles = roles;
-//    }
 }

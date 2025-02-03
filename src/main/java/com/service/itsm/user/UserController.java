@@ -65,7 +65,7 @@ public class UserController {
                 .collect(Collectors.joining(","));
 
         long now = (new Date()).getTime();
-        Date validity  = new Date(now + 1800L);
+        Date validity  = new Date(now + 60000L);
 
         return Jwts.builder()
                 .setSubject(authentication.getName())
@@ -77,6 +77,7 @@ public class UserController {
 
     @GetMapping("user-list")
     public List<User> getAllUser(){
+
         return userService.getAllUsers();
     }
 
